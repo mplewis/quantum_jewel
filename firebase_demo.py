@@ -21,7 +21,6 @@ while True:
 
     response = requests.put(FIREBASE_URL + '.json', data=payload)
 
-    print 'Done.'
-    print 'Request body: %s' % response.text
+    print 'Done. Request body: %s' % response.text
 
     sleep(SECS_TO_SLEEP)
