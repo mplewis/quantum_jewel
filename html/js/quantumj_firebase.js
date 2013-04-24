@@ -10,6 +10,7 @@ testRef.on('value', function(dataSnap) {
         row = data[i]
         console.log(row);
     };
+    Game.drawBoard(data);
 });
 
 console.log('Ready!');

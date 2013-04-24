@@ -1,7 +1,7 @@
 from random import randint
 
 class Board:
-    def __init__(self, board_height=8, board_width=8, num_gem_types=8):
+    def __init__(self, board_height=8, board_width=8, num_gem_types=7):
         self.height = board_height
         self.width = board_width
         self.board = [[randint(0, num_gem_types - 1) for x in xrange(self.width)] for x in xrange(self.height)]
